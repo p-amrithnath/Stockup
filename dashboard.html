@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/DevanagariBrahmi/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-V8wrmT4H8eeP/8/hWxCtgstgOeSZl4Tw09rHHZ4pbn43L3O+R7x/WwdULrLO/yhoYUzIkp5Hl0Lg3PYc5KY+5A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--PLUGIN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@300;400&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
+  <body class="dark-theme-variables">
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./logo.png" alt="Logo" />
+            <h2>STOCK<span class="danger">UP</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+       
+      </div>
+
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons-sharp"> dashboard </span>
+            <h3>Profile</h3>
+          </a>
+          <a href="/availablestock.html">
+            <span class="material-icons-sharp"> inventory </span>
+            <h3>Available Stocks</h3>
+          </a>
+          <a href="https://spider-host-predictor-main-w7ulek.streamlit.app/">
+            <span class="material-icons-sharp"> insights </span>
+            <h3>Predictor</h3>
+          </a>
+          <a href="https://spider-host-ai-chatbot-chatbot-00oeer.streamlit.app/">
+            <span class="material-icons-sharp"> person_outline </span>
+            <h3>Master-Bot</h3>
+          </a>
+          <a href="/news.html">
+            <span class="material-icons-sharp"> mail_outline </span>
+            <h3>Stock News</h3>
+          </a>
+          <a href="/comment.html">
+            <span class="material-icons-sharp"> add </span>
+            <h3>Connect</h3>
+          </a>
+          <a id="logout-btn" href="#">
+            <span class="material-icons-sharp" > logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <div class="containers">
+        <div class="alert">
+          <!-- <span class="closebtn">&times;</span> -->
+          <strong>USER PROFILE</strong>
+          <!-- <a href="#" style="color: #7ed321">Resend Verification Code</a> -->
+        </div>
+        <table>
+          <tr>
+            <td>
+              <section>
+                
+                <img
+                  src=""
+                  id="blah"
+                  alt="Avatar"
+                />
+              </section>
+              <h1><span id="username"></span></h1>
+            </td>
+            <td>
+              <ul>
+                <li>
+                  <b>Name : <span id="fullname"></span> </b>
+                </li>
+                <li>
+                  <b>Email : <span id="email"></span></b>
+                  
+                </li>
+                <li>
+                  <b>Contact number : <span id="contactno"></span></b>
+                </li>
+                <li>
+                  <b>Address : <span id="address"></span></b>
+                </li>
+              <a href="./profileupdate.html">
+              <button  class="upbtn">
+                <i class="material-icons-sharp">update</i> Update
+              </button></a>
+            </td>
+          </tr>
+          <tr></tr>
+        </table>
+      </div>
+     <!-- </div>  -->
+      
+     <div class="loader"></div>
+      
+    </div>
+    <script type = "module" src="./dashboard.js"></script>
+  </body>
+</html>

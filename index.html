@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stockup</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./logo.png" alt="Logo" />
+        <h2>STOCK<span class="danger">UP</span></h2>
+      </div>
+    </nav>
+    <div class="containers">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="stock_video.mp4" type="video/mp4" />
+      </video>
+      <div class="left-letters">
+        Experience<br />
+        excellence<br />
+        with us
+      </div>
+      <div class="container" id="container">
+        <div class="form-container sign-up-container" id="create-acct">
+          <form action="#">
+            <h1>Create Account</h1>
+            
+            <span>or use your email for registration</span>
+            <input id="username" type="text" placeholder="Name" />
+            <input id="email-signup" type="email" placeholder="Email" />
+            <input id="password-signup" type="password" placeholder="Password" />
+            <button id="create-acct-btn">Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container" id="main">
+          <form action="#">
+            <h1>Sign in</h1>
+            
+            
+            <input id="email" type="email" placeholder="Email" />
+            <input id="password" type="password" placeholder="Password" />
+            <a href="#" onclick="showAlert()">Forgot your password?</a>
+            <button id="submit">Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>
+                To keep connected with us please login with your personal info
+              </p>
+              <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="copyright">&copy; All Rights Reserved 2023-2024</div>
+      <div id="owner">
+        <span>
+          Designed by <a href="#">Stockup@CEC</a>
+        </span>
+      </div>
+    </footer>
+    <script>
+    function showAlert() {
+      window.alert('Contact ADMIN ');
+    }
+    </script>
+    <script type = "module" src="index.js"></script>
+    
+  </body>
+</html>

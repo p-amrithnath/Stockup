@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile update </title>
+    <link rel="stylesheet" href="profileupdate.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/DevanagariBrahmi/logo.png" />
+
+    <!--PLUGIN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@300;400&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="dark-theme-variables">
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./logo.png" alt="Logo" />
+            <h2>STOCK<span class="danger">UP</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="containers">
+        <div class="alert">
+          <!-- <span class="closebtn">&times;</span> -->
+          <strong>UPDATE PROFILE</strong>
+          <!-- <a href="#" style="color: #7ed321">Resend Verification Code</a> -->
+        </div>
+        <table>
+          <tr>
+            <td>
+              <ul>
+                <li>
+                  <b>Username : </b>
+                  <input type="text" id="new-username" />
+                </li>
+                <li>
+                  <b>Contact number : </b>
+                  <input type="text" id="new-contactno" />
+                </li>
+                <li>
+                  <b>Address : </b>
+                  <input type="text" id="new-address" />
+                </li>
+                <li>
+                  <b>Photo : </b>
+                  <input type="file" id="new-photo" />
+                </li>
+              </ul>
+              <!--<button id="update-profile-btn">Update</button> -->
+              <button type="button" class="button" onclick="this.classList.toggle('button--loading')">
+                <span class="button__text">Update</span>
+            </button>
+            </td>
+          </tr>
+          <tr></tr>
+        </table>
+      </div>
+
+      
+    </div>
+    <script type="module" src="./profileupdate.js"></script>
+  </body>
+</html>

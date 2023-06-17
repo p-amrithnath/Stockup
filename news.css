@@ -1,0 +1,130 @@
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    margin: 12px auto;
+}
+
+#newsBox {
+    margin: 16px auto 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #333131;
+    padding: 22px;
+    visibility: hidden;
+    padding: 3em;
+}
+
+body{
+    background-color:#333131 ;
+}
+
+.newsCard {
+    
+    width: 40%;
+    
+    margin: 9px;
+}
+
+#img {
+    height: 406px;
+    width: 721px;
+}
+
+.line {
+    width: 30vw;
+    border: 1px solid black;
+    margin: 7px;
+    background-color: black;
+    height: 4px;
+    border-radius: 24px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.mySpin {
+    margin: 50px auto;
+    display: block;
+    height: 10vh;
+    ;
+    width: 10vh;
+    ;
+    visibility: visible;
+}
+
+nav {
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    font-size: 14px;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: left;
+    z-index: 999;
+}
+
+nav h1 {
+    margin: 20px ;
+}
+
+nav i {
+    color: red;
+}
+
+nav a {
+    color: #3c97bf;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    gap: 0.8rem;
+  }
+  .logo img {
+    margin-left: 1rem;
+    margin-top: 0rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .danger {
+    
+    color: #ff7782;
+  }
+
+  .headline{
+    padding-top: 0.5em;
+   padding-left: 35%;
+  }
+
+  .img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.375rem;
+    max-width: 100%;
+    height: 300px;
+}
+  
+/* Media Quries */
+@media only screen and (max-width: 1150px) {
+    .newsCard {
+        width: 83vw;
+        margin: 7px;
+    }
+}
+@media (max-width: 768px) {
+    .newsCard {
+        width: 90%; /* Change the width to occupy full width on smaller screens */
+    }}
