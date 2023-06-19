@@ -79,7 +79,7 @@ updateProfileButton.addEventListener('click', () => {
             set(userRef, userData)
               .then(() => {
                 console.log('Profile updated successfully!');
-                window.location.href = "/Index/index.html";
+                window.location.href = "/dashboard.html";
               })
               .catch((error) => {
                 console.error(error);
