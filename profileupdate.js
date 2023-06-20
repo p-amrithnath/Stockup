@@ -35,15 +35,17 @@ updateProfileButton.addEventListener('click', () => {
   const fileInput = document.getElementById('new-photo');
   
   if (!currentUser) {
+    window.alert('User is not logged in!');
     console.error('User is not logged in!');
     return;
   }
 
   const file = fileInput.files[0];
 
-  if (!file) {
+  if (!file || !newUsername || !newContactno || !newAddress ) {
     updateProfileButton.classList.remove("button--loading");
-    console.error('No file selected!');
+    window.alert('All Fields are Mandatory!');
+    console.error('field is missing!');
     return;
   }
   
