@@ -136,7 +136,7 @@ function handleDeleteComment(event) {
 
 // Function to delete a comment
 function deleteComment(commentId) {
-  if (confirm("Are you sure you want to delete this comment?")) {
+  
     const user = auth.currentUser;
     if (user) {
       const commentRef = ref(database, `comments/${commentId}`);
@@ -144,9 +144,12 @@ function deleteComment(commentId) {
 
       // Check if the logged-in user is the author of the comment
       get(commentRef)
-        .then((snapshot) => {
+        .then((snapshot) => 
+        {
           const comment = snapshot.val();
           if (comment && comment.email == user.email) {
+            if (confirm("Are you sure you want to delete this comment?")) 
+            {
             // Delete the comment
             remove(commentRef)
               .then(() => {
@@ -155,8 +158,10 @@ function deleteComment(commentId) {
               .catch((error) => {
                 console.error("Error deleting comment:", error);
               });
-          } else {
+          }
+         } else {
             console.log("You are not authorized to delete this comment.");
+            window.alert("You are not authorized to delete this comment.");
           }
         })
         .catch((error) => {
@@ -165,8 +170,9 @@ function deleteComment(commentId) {
     } else {
       console.log("No user logged in.");
     }
-  }
+  
 }
+
 
 
 
